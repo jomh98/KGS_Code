@@ -1,0 +1,25 @@
+# 품질 평가용 테스트 질문셋 (PRD §11 4단계, 50문항 이상으로 확장 예정)
+# expected_sources: 답변에 포함되어야 할 근거 문서(검수자가 채움)
+# expect_insufficient: true면 "확인된 근거 없음" 처리가 기대됨
+
+questions:
+  - id: q001
+    gas_category: 도시가스
+    question: 도시가스 배관을 지하에 매설할 때 매설 깊이 기준은?
+    expected_sources: []
+  - id: q002
+    gas_category: LPG
+    question: LPG 용기 보관실의 설치 기준은?
+    expected_sources: []
+  - id: q003
+    gas_category: 고압가스
+    question: 고압가스 제조 허가를 받아야 하는 경우는?
+    expected_sources: []
+  - id: q004
+    gas_category: 수소
+    question: 수소충전소 안전관리자 선임 기준은?
+    expected_sources: []
+  - id: q005
+    gas_category: 공통
+    question: 오늘 서울 날씨 알려줘
+    expect_insufficient: true
