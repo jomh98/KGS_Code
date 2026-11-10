@@ -1,0 +1,61 @@
+# 수집 대상 법령 목록 (PRD §3.1)
+# priority: A = 가스 4법(법률·시행령·시행규칙·별표 전체), B = 관련 행정규칙, C = 관련 법령(교차 조항 중심)
+# include_subordinate: true면 시행령·시행규칙을 함께 수집
+# (B)·(C)의 최종 목록은 착수 단계에서 Open API 검색으로 확정한다.
+
+laws:
+  # ── (A) 핵심 가스 4법 ──
+  - name: 고압가스 안전관리법
+    priority: A
+    gas_category: 고압가스
+    include_subordinate: true
+  - name: 액화석유가스의 안전관리 및 사업법
+    priority: A
+    gas_category: LPG
+    include_subordinate: true
+  - name: 도시가스사업법
+    priority: A
+    gas_category: 도시가스
+    include_subordinate: true
+  - name: 수소경제 육성 및 수소 안전관리에 관한 법률
+    priority: A
+    gas_category: 수소
+    include_subordinate: true
+
+  # ── (C) 관련 법령 (후보) ──
+  - name: 산업안전보건법
+    priority: C
+    gas_category: 공통
+    include_subordinate: true
+  - name: 화학물질관리법
+    priority: C
+    gas_category: 공통
+    include_subordinate: true
+  - name: 위험물안전관리법
+    priority: C
+    gas_category: 공통
+    include_subordinate: true
+  - name: 소방시설 설치 및 관리에 관한 법률
+    priority: C
+    gas_category: 공통
+    include_subordinate: true
+  - name: 화재의 예방 및 안전관리에 관한 법률
+    priority: C
+    gas_category: 공통
+    include_subordinate: true
+  - name: 집단에너지사업법
+    priority: C
+    gas_category: 공통
+    include_subordinate: true
+  - name: 재난 및 안전관리 기본법
+    priority: C
+    gas_category: 공통
+    include_subordinate: false
+
+# ── (B) 관련 행정규칙 ──
+# (A) 법령을 근거로 한 고시·훈령·예규. 아래 키워드로 행정규칙을 검색해 수집하고,
+# 결과를 검토한 뒤 확정 목록을 admin_rules에 직접 적는다.
+admin_rule_search:
+  keywords: [고압가스, 액화석유가스, 도시가스, 수소, 가스안전]
+  priority: B
+admin_rules: []
